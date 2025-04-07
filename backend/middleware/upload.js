@@ -1,3 +1,4 @@
+
 import multer from "multer";
 import { v4 as uuid } from "uuid";
 import path from "path";
@@ -12,4 +13,9 @@ const storage = multer.diskStorage({
   }
 });
 
-export default multer({ storage });
+export default multer({
+  storage,
+  limits: {
+    fileSize: 100 * 1024 * 1024 // 100MB limit
+  }
+});
