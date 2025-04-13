@@ -14,7 +14,7 @@
 
 import express from 'express';
 import { UploadController } from '../controllers/uploadController.js';
-import { DownloadController } from '../controllers/DownloadController.js';  // Add this import
+import { DownloadController } from '../controllers/downloadController.js';  // Add this import
 
 const router = express.Router();
 
